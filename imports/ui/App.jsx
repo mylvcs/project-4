@@ -32,6 +32,15 @@ class App extends Component {
 							<HomePage />
 
 						}
+<template name="upvote">
+  <button>Up vote</button>
+  <p>You've pressed the upvote {{counter}} times.</p>
+</template>
+
+<template name="downvote">
+  <button>Down vote</button>
+  <p>You've pressed the down vote {{counter}} times.</p>
+</template>
 						<LoginWithTwitter />
 							
 						<LoginWithSpotify />

@@ -21,7 +21,9 @@
 	
 </head>
 <body>
-	<div id="react-target"></div>
+  <div id="react-target"></div>
+  {{> upvote}}
+  {{> downvote}}
 	<script
     src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -38,3 +40,15 @@
     crossorigin="anonymous"
   ></script>
 </body>
+
+
+
+<template name="upvote">
+  <button>Up vote</button>
+  <p>You've pressed the upvote {{counter}} times.</p>
+</template>
+
+<template name="downvote">
+  <button>Down vote</button>
+  <p>You've pressed the down vote {{counter}} times.</p>
+</template>
