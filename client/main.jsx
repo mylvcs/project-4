@@ -48,5 +48,6 @@ Template.downvote.events({
 });
 
 Meteor.startup(() => {
-  render(<App />, document.getElementById('react-target'));
+ // render(<App />, document.getElementById('react-target'));
+  render(<List />, document.getElementById('react-target-list'));
 });

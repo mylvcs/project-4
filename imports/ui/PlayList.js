@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+//TODO
 
-class PlayList extends Component{
+export default class PlayList extends Component{
 	render(){
 		let playlist = this.props.playlist
 		return (

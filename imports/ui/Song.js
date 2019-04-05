@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import { Meteor } from "meteor/meteor";
 import { withTracker } from "meteor/react-meteor-data";
-import { Button } from 'semantic-ui-react';
 
+import { Button } from 'semantic-ui-react';
+//TODO
 //show the genres, artist and album info about the song 
 //so this page is rendered after the user clicked on the music search component
 export default class Song extends Component {
@@ -18,6 +19,8 @@ export default class Song extends Component {
       <div className="primary-color border rounded">
         
         <div className="row d-flex pt-4 justify-content-center">
+
+       
         <h1>Song's name </h1>
             <div>song's genres </div>
             <div>song's artist </div>

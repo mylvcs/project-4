@@ -1,0 +1,13 @@
+<template name="song">
+	<tr class="song {{# if is_search_result}}enqueue{{/if}}">
+		<td class="name">{{name}}</td>
+		<td class="artists">
+			{{#each track.artists}}
+				{{> artist}}
+			{{/each}}
+		</td>
+    <td>
+      {{track.album.name}}
+    </td>
+	</tr>
+</template>
