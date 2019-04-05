@@ -22,3 +22,6 @@ accounts-ui
 accounts-password
 accounts-google
 google-config-ui
+service-configuration
+xinranxiao:accounts-spotify
+xinranxiao:spotify

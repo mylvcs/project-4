@@ -1,31 +1,19 @@
 import { Meteor } from 'meteor/meteor';
 import Links from '/imports/api/links';
 
-function insertLink(title, url) {
-  Links.insert({ title, url, createdAt: new Date() });
-}
-
 Meteor.startup(() => {
+
+
   // If the Links collection is empty, add some data.
-  if (Links.find().count() === 0) {
-    insertLink(
-      'Do the Tutorial',
-      'https://www.meteor.com/tutorials/react/creating-an-app'
-    );
+  ServiceConfiguration.configurations.update(
+    { "service": "spotify" },
+    {
+      $set: {
+        "clientId": "40a25c6162004edd9a4eac59e6fad904",
+        "secret": "68b4fc0373b64da293201be1796b0f58"
+      }
+    },
+    { upsert: true }
+  );
 
-    insertLink(
-      'Follow the Guide',
-      'http://guide.meteor.com'
-    );
-
-    insertLink(
-      'Read the Docs',
-      'https://docs.meteor.com'
-    );
-
-    insertLink(
-      'Discussions',
-      'https://forums.meteor.com'
-    );
-  }
 });

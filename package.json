@@ -10,11 +10,15 @@
   "dependencies": {
     "@babel/runtime": "^7.1.5",
     "bcrypt": "^3.0.5",
+    "cookie-parser": "^1.4.4",
+    "express": "^4.16.4",
     "meteor-node-stubs": "^0.4.1",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
     "react-router-dom": "^5.0.0",
-    "semantic-ui-react": "^0.86.0"
+    "request": "^2.88.0",
+    "semantic-ui-react": "^0.86.0",
+    "spotify-web-api-js": "^1.2.0"
   },
   "meteor": {
     "mainModule": {
