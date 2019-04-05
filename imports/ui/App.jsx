@@ -8,10 +8,8 @@ import "../style/app.css";
 import LoginWithTwitter from "./LoginWithTwitter";
 import LoginWithSpotify from "./LoginWithSpotify";
 
-
 import { Meteor } from "meteor/meteor";
 import { withTracker } from "meteor/react-meteor-data";
-
 
 
 class App extends Component {
@@ -32,15 +30,7 @@ class App extends Component {
 							<HomePage />
 
 						}
-<template name="upvote">
-  <button>Up vote</button>
-  <p>You've pressed the upvote {{counter}} times.</p>
-</template>
 
-<template name="downvote">
-  <button>Down vote</button>
-  <p>You've pressed the down vote {{counter}} times.</p>
-</template>
 						<LoginWithTwitter />
 							
 						<LoginWithSpotify />

@@ -5,21 +5,17 @@ import App from '/imports/ui/App';
 import "../imports/startup/accounts-config.js";
 import {Template} from 'meteor/templating';
 import {ReactiveVar} from 'meteor/reactive-var';
-
-
-Meteor.startup(() => {
-  render(<App />, document.getElementById('react-target'));
-});
+import './main.html'
 
 Template.upvote.onCreated(function UpVoteOnCreated(){
-  //counter starts at 0
+  //upcounter starts at 0
   this.upcounter = new ReactiveVar(0);
 
 });
 
 Template.upvote.helpers({
-  upcounter(){
-    return Template.instance().counter.get();
+  counter(){
+    return Template.instance().upcounter.get();
   },
 })
 
@@ -49,4 +45,8 @@ Template.downvote.events({
     //increment the counter when button is clicked
     instance.downcounter.set(instance.downcounter.get() + 1);
   }
+});
+
+Meteor.startup(() => {
+  render(<App />, document.getElementById('react-target'));
 });
