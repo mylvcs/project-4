@@ -1,0 +1,18 @@
+<template name= "albums">
+        {{#each albums}}
+    
+        <div class= "row">
+            <div class="col-md-12">
+                <div class="artist">
+                    <h4><a href="">{{name}}</a></h4>
+                    {{#if genres}}
+                    <div>
+                        <strong>Genre : {{genres}}</strong>
+                    </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    
+        {{/each}}
+    </template>

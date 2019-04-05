@@ -51,3 +51,16 @@ Meteor.startup(() => {
  // render(<App />, document.getElementById('react-target'));
   render(<List />, document.getElementById('react-target-list'));
 });
+
+Meteor.methods({
+  'getArtist'(id) {
+     const result = HTTP.call ('GET', 'https://api.spotify.com/v1/artists/'+ id);
+     return result.data;
+  },
+  //need to be polished
+  'getAlbums'(artistId){
+    const result = HTTP.call ('GET', 'https://api.spotify.com/v1/artists/'+ artistId + '/albums');
+     return result.data.items;
+
+  }
+});
