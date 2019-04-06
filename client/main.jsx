@@ -6,6 +6,7 @@ import "../imports/startup/accounts-config.js";
 import {Template} from 'meteor/templating';
 import {ReactiveVar} from 'meteor/reactive-var';
 import './main.html'
+import List from '/imports/ui/List';
 
 Template.upvote.onCreated(function UpVoteOnCreated(){
   //upcounter starts at 0
@@ -48,7 +49,7 @@ Template.downvote.events({
 });
 
 Meteor.startup(() => {
- // render(<App />, document.getElementById('react-target'));
+ render(<App />, document.getElementById('react-target'));
   render(<List />, document.getElementById('react-target-list'));
 });
 

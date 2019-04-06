@@ -99,14 +99,14 @@ export default class List extends Component {
 					 <h1>Here is user's list</h1>
 					 
         		<div>
-          <h1 style={{...defaultStyle, 'font-size': '54px'}}>
-            {this.state.user.name}'s Playlists
+          <h1 >
+            {/* {this.state.user.name}'s Playlists */}
           </h1>
-          <PlaylistCounter playlists={playlistToRender}/>
-          <HoursCounter playlists={playlistToRender}/>
-          <Filter onTextChange={text => {
+         {/* <PlaylistCounter playlists={playlistToRender}/> */}
+          {/* <HoursCounter playlists={playlistToRender}/> */}
+          {/* <Filter onTextChange={text => {
               this.setState({filterString: text})
-            }}/>
+            }}/> */}
 
           {playlistToRender.map(playlist => 
             <Playlist playlist={playlist} />

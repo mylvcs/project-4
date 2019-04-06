@@ -1,13 +1,6 @@
 import React, { Component } from "react";
 import { Meteor } from "meteor/meteor";
 
-var options = {
-    showDialog: true, // Whether or not to force the user to approve the app again if they’ve already done so.
-    requestPermissions: ['user-read-email'] // Spotify access scopes.
-  };
-  Meteor.loginWithSpotify(options, function(err) {
-    console.log(err || "No error");
-  });
 
 
 export default class LoginWithSpotify extends Component {
@@ -18,12 +11,25 @@ export default class LoginWithSpotify extends Component {
     };
 
   }
-  
+  signUp(){
+    var options = {
+    showDialog: true, // Whether or not to force the user to approve the app again if they’ve already done so.
+    requestPermissions: ['user-read-email'] // Spotify access scopes.
+  };
+  Meteor.loginWithSpotify(options, function(err) {
+    console.log(err || "No error");
+  });
+
+    console.log(Meteor.user());
+  }
+
   	render() {
     return (
+
+
       <div id = "loginWithSpotify">
    
-      <button> Login with spotify </button>
+      <button onClick = {this.signUp}> Login with spotify </button>
         
       </div>
     );
