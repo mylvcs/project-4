@@ -13,7 +13,7 @@ import { withTracker } from "meteor/react-meteor-data";
 
 
 class App extends Component {
-
+	
 	render() {
 		return (
 			<div id = "app">
@@ -24,7 +24,6 @@ class App extends Component {
 						
 						{
 							Meteor.user() ? 
-
 							<Music />
 							: 
 							<HomePage />
@@ -35,7 +34,6 @@ class App extends Component {
 							
 						<LoginWithSpotify />
 						<br />
-					
 						<Footer />
 						<br />
 				

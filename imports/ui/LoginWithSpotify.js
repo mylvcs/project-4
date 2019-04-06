@@ -19,6 +19,7 @@ export default class LoginWithSpotify extends Component {
   Meteor.loginWithSpotify(options, function(err) {
     console.log(err || "No error");
   });
+  //https://accounts.spotify.com/authorize?client_id=40a25c6162004edd9a4eac59e6fad904&response_type=code&redirect_uri=http://localhost:3000/callback/&scope=user-read-private%20user-read-email&state=34fFs29kd09
 
     console.log(Meteor.user());
   }

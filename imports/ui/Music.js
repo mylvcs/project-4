@@ -28,14 +28,20 @@ export default class Music extends Component {
 	  }
 
   	render() {
+			console.log(Meteor.user());
+
     return (
+	
+
       <div className=" primary-color border rounded">
         
         <div className="row d-flex pt-4 justify-content-center">
         	<h1>
         		Search the song you want to comment?
         	</h1>
-			
+					<div>
+				
+				</div>
 			<form>
 			  <label>
 			    Name:

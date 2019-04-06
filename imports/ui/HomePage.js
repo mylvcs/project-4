@@ -15,7 +15,7 @@ export default class HomePage extends React.Component {
 					<br/><br/>
 					
 				</p> <br/>
-				<Image src="/background.png" fluid /><br/>
+				{/* <Image src="/background.png" fluid /><br/> */}
 			</div>
 		);
 	}
