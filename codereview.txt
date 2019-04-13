@@ -1,0 +1,3 @@
+A readme file would go a LONG way to helping people navigate your repository.
+Otherwise cool website, spotfiy integration must have been hard. I don't have a spotify so I wasnt able to see much
+But I would definitely import a bootstrap template and give everything a few simple classes just to make it look like it was made earlier then the 90s, style wise.
